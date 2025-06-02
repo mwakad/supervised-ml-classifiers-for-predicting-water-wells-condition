@@ -71,7 +71,7 @@ ROC curves visualize each model's trade-off between sensitivity and specificity 
 
 ## 6. Conclusion
 
-The analysis demonstrates that tuned supervised ML models can effectively predict the condition of water wells using appropriately preprocessed features. The tuned Gradient Boosting Classifier is particularly a powerful, highly generalizable model that stakeholders in the Tanzanian water sector can leverage to to anticipate well failures and plan interventions proactively.
+The analysis demonstrates that tuned supervised ML models can effectively predict the condition of water wells using appropriately preprocessed features. The tuned Gradient Boosting Classifier is particularly a powerful, highly generalizable model that stakeholders in the Tanzanian water sector can leverage to to anticipate well failures and plan interventions proactively.This model was deployed to the final testdata.csv dataset and successfully generated predictions on the status of a water well for 14,847 entries based on their respective features' values. 
 
 ## 7. Business Recommendations
 

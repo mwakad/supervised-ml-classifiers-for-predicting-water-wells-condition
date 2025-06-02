@@ -38,22 +38,20 @@ Model selection and tuning are guided by cross-validation and grid search to ide
 They capture the counts of a model's True Positives, True Negatives, False Positive, and False Negatives. Confusion Matrices are plotted for each model's performance on the Train set and the Test sets to highlight the respective strengths and weaknesses of each classifier.
 
 **Logistic Regression (Tuned):**
-![Confusion Matrix - Logistic Regression (Tuned)](images/confusion_matrices-tuned-logistic-regression-classifier.png)
+![confusion-matrices-tuned-logistic-regression-model](https://github.com/user-attachments/assets/c730e981-4a1c-4d0a-b4a6-d31746d68e71)
 
 **Decision Tree (Tuned):**
-![Confusion Matrix - Decision Tree (Tuned)](images/confusion_matrices-tuned-decision-tree-classifier.png)
+![confusion_matrices-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/db57d2a3-f908-4cd6-b0ed-63e07e00b654)
 
 **Gradient Boosting (Tuned):**
-![Confusion Matrix - Gradient Boosting (Tuned)](images/confusion-matrices-tuned-gradient-boosting-classifier.png)
-
+![confusion-matrices-tuned-gradient-boosting-classifier](https://github.com/user-attachments/assets/c67d4bbe-d682-466c-b7e7-d7272b16613e)
 
 
 ### ROC Curves
 ROC curves visualize each model's trade-off between sensitivity and specificity for each category of the target variable. The Area Under the Curve (AUC) highlights each classifier's discrimination ability.
 
 **Logistic Regression (Tuned):**
-(https://github.com/user-attachments/assets/50df0f78-8fda-4eba-bc56-0d7d20409f2d)
-d)](images/roc-curves-tuned-logistic-regression-classifier.png)
+![roc-curves-tuned-logistic-regression-classifier](https://github.com/user-attachments/assets/dbd8e60c-d58e-478e-ae94-8ae7dfc6c121)
 
 **Decision Tree (Tuned):**
 ![roc-curves-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/74d17859-ee31-4818-93b5-f1085fb63e5f)

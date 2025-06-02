@@ -24,7 +24,7 @@ These steps ensure that the data is clean, consistent, balanced and suitable for
 
 ## 4. Modelling
 
-Multiple supervised classifiers are implemented and compared to address the ternary classification problem:
+Multiple supervised ML classifiers are build, trained on a balanced training set, tuned, and their respective performance analyzed to determine the best-fit model for predicting values of a ternary target variable.
 
 - **Logistic Regression (Baseline):** Serves as a simple, interpretable benchmark for multiclass classification. Both untuned and hyperparameter-tuned versions were evaluated.
 - **Decision Tree Classifier:** Captures non-linear relationships and feature interactions. The model is optimized through grid search, adjusting parameters such as tree depth and minimum samples per split.

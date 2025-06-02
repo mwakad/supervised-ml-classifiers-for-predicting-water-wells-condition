@@ -52,20 +52,23 @@ They capture the counts of a model's True Positives, True Negatives, False Posit
 ROC curves visualize each model's trade-off between sensitivity and specificity for each category of the target variable. The Area Under the Curve (AUC) highlights each classifier's discrimination ability.
 
 **Logistic Regression (Tuned):**
-![ROC Curve - Logistic Regression (Tuned)](images/roc-curves-tuned-logistic-regression-classifier.png)
+(https://github.com/user-attachments/assets/50df0f78-8fda-4eba-bc56-0d7d20409f2d)
+d)](images/roc-curves-tuned-logistic-regression-classifier.png)
 
 **Decision Tree (Tuned):**
-![ROC Curve - Decision Tree (Tuned)](images/roc-curves-tuned-decision-tree-classifier.png)
+![roc-curves-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/74d17859-ee31-4818-93b5-f1085fb63e5f)
 
 **Gradient Boosting (Tuned):**
-![ROC Curve - Gradient Boosting (Tuned)](images/roc-curves-tuned-gradient-boosting-classifier.png)
+![roc-curves-gradient-boosting-classifier](https://github.com/user-attachments/assets/41ed8056-2321-4d8a-b2df-8edb783708c3)
+
 
 **Selected Model for Deployment:** -The Gradient Boosting Classifier consistently outperformed other models, achieving the highest accuracy and balanced performance across all classes, as evidenced by the evaluation metrics and visualizations.
 
 
 ### Top 15 Important Features
 
-![Top 15 Features](images/top-15-important-features.png)
+![top-15-important-features](https://github.com/user-attachments/assets/773996dd-f06e-44ba-89ed-69270546880d)
+
 
 
 

@@ -10,17 +10,21 @@ Access to clean and reliable water is a critical challenge in Tanzania. Many wel
 
 ## 3. Data Preprocessing
 
-The dataset consists of features such as location, construction year, installer, well type, and other attributes relevant to water well functionality. The preprocessing phase involved several key steps:
+The Data Preprocessing Pipeline encompases the followig steps that are executed sequentially to prevent data-leakage:
 
-- **Data Cleaning:** Remove irrelevant columns per the project's scope, drop duplicate records, and handle missing values.
-- **Feature Engineering:** Enginner the `well-age` feature based on `construction_year` and `date_recorded`.
-- **Label Encode Target variable:** Transform the three categories of the target variable to numerical identifiers (Functional = 0), (Functional needs repair = 1), and (Non functional = 2)
-- **Encoding Categorical Features:** OneHot Encode categorical features to ensure compatibility with machine learning algorithms.
-- **Scaling and Normalization:** Standardize numerical features via the MinMaxScaling technique to ensure uniformity and improve model convergence.
-- **Train-Test Split:** Divide the dataset into training and test sets to enable unbiased model evaluation and avoid data leakage.
-- **Majority Classes' Undersampling:** Undersample the majority classes for the target variable to ensure the number of samples is equal across the three categories to minimize bias.
+1. Define Exog and Endog.
+2. Perform Train-Test split.
+3. Drop rendundant and irrelevant columns.
+4. Hande missing values.
+5. Feature engineering.
+6. Multicollinearity check on numerical features.
+7. Numerical Features' normalization.
+8. Categorical Features' OneHot Encoding.
+9. Target Variable Label Encoding.
+10. Addressing Class Imbalance in X_train
+11. Preprocessing Test Data.
+12. Preprocessing Validation Data
 
-These steps ensure that the data is clean, consistent, balanced and suitable for robust modeling.
 
 ## 4. Modelling
 
@@ -38,26 +42,27 @@ Model selection and tuning are guided by cross-validation and grid search to ide
 They capture the counts of a model's True Positives, True Negatives, False Positive, and False Negatives. Confusion Matrices are plotted for each model's performance on the Train set and the Test sets to highlight the respective strengths and weaknesses of each classifier.
 
 **Logistic Regression (Tuned):**
-![confusion-matrices-tuned-logistic-regression-model](https://github.com/user-attachments/assets/c730e981-4a1c-4d0a-b4a6-d31746d68e71)
+![confusion-matrices-tuned-logistic-regression-model](https://github.com/user-attachments/assets/60876a95-4048-41fe-abd3-c39a1231c70e)
 
 **Decision Tree (Tuned):**
-![confusion_matrices-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/db57d2a3-f908-4cd6-b0ed-63e07e00b654)
+![confusion_matrices-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/915d82c1-03f0-429a-94bb-661a1e8153e6)
 
 **Gradient Boosting (Tuned):**
-![confusion-matrices-tuned-gradient-boosting-classifier](https://github.com/user-attachments/assets/c67d4bbe-d682-466c-b7e7-d7272b16613e)
+![confusion-matrices-tuned-gradient-boosting-classifier](https://github.com/user-attachments/assets/14558041-5d16-4ce8-aa52-58fc52802b11)
+
 
 
 ### ROC Curves
 ROC curves visualize each model's trade-off between sensitivity and specificity for each category of the target variable. The Area Under the Curve (AUC) highlights each classifier's discrimination ability.
 
 **Logistic Regression (Tuned):**
-![roc-curves-tuned-logistic-regression-classifier](https://github.com/user-attachments/assets/dbd8e60c-d58e-478e-ae94-8ae7dfc6c121)
+![roc-curves-tuned-logistic-regression-model](https://github.com/user-attachments/assets/12cebc53-acaa-4120-a94b-e74c5c6edfd1)
 
 **Decision Tree (Tuned):**
-![roc-curves-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/74d17859-ee31-4818-93b5-f1085fb63e5f)
+![roc-curves-tuned-decision-tree-classifier](https://github.com/user-attachments/assets/763ecf3f-b43f-427f-b373-5707f3bff1bf)
 
 **Gradient Boosting (Tuned):**
-![roc-curves-gradient-boosting-classifier](https://github.com/user-attachments/assets/41ed8056-2321-4d8a-b2df-8edb783708c3)
+![roc-curves-tuned-gradient-boosting-classifier](https://github.com/user-attachments/assets/cd5b1ca5-2fae-4455-89d3-f04e26591f82)
 
 
 **Selected Model for Deployment:** -The Gradient Boosting Classifier consistently outperformed other models, achieving the highest accuracy and balanced performance across all classes, as evidenced by the evaluation metrics and visualizations.
@@ -65,14 +70,13 @@ ROC curves visualize each model's trade-off between sensitivity and specificity 
 
 ### Top 15 Important Features
 
-![top-15-important-features](https://github.com/user-attachments/assets/773996dd-f06e-44ba-89ed-69270546880d)
-
+![top-15-important-features](https://github.com/user-attachments/assets/1914bcf7-b18e-43de-b817-f258566f0ddd)
 
 
 
 ## 6. Conclusion
 
-The analysis demonstrates that tuned supervised ML models can effectively predict the condition of water wells using appropriately preprocessed features. The tuned Gradient Boosting Classifier is particularly a powerful, highly generalizable model that stakeholders in the Tanzanian water sector can leverage to to anticipate well failures and plan interventions proactively. This model was validated by predicting the class of a water-well's functional status for 14,847 entries from a previously unseen dataset (**testdata.csv**).
+The analysis demonstrates that tuned supervised ML models can effectively predict the condition of water wells using appropriately preprocessed features. The tuned Gradient Boosting Classifier is particularly a powerful, highly generalizable model that stakeholders in the Tanzanian water sector can leverage to to anticipate well failures and plan interventions proactively. This model was validated by predicting the class of a water-well's functional status for 14,850 entries from a previously unseen dataset (**testdata.csv**).
 
 ## 7. Business Recommendations
 

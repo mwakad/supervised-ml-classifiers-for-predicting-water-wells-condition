@@ -1,4 +1,8 @@
+# Data and Images folder
 # ---------------------------------------------------
+data/
+images/
+
 # Python Environment and Build Artifacts
 # ---------------------------------------------------
 # Byte-code files

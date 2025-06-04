@@ -1,7 +1,7 @@
 # Data and Images folder
 # ---------------------------------------------------
-data/
-images/
+#data/
+#images/
 # ----------------------------------------------------
 
 # Python Environment and Build Artifacts

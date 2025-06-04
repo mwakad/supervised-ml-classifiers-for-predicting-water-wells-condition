@@ -68,7 +68,7 @@ ROC curves visualize each model's trade-off between sensitivity and specificity 
 The respective performance of the three classifiers is quantified based on **F1-score**, and **ROC-AUC**.
 
 | Model                     | Train F1-score | Test F1-score | Train ROC-AUC | Test ROC-AUC |
-|---------------------------|----------------|---------------|----------------|---------------|---------------|--------------|
+|---------------------------|----------------|---------------|---------------|--------------|
 | Logistic Regression (Untuned) | 0.650390       | 0.674233      | 0.831460      | 0.816319     |
 | Logistic Regression (Tuned)   | 0.650930       | 0.671800      | 0.832009      | 0.816467     |
 | Decision Tree (Untuned)   | 0.999461       | 0.657666      | 1.000000      | 0.731613     |

@@ -86,6 +86,26 @@ The analysis demonstrates that tuned supervised ML models can effectively predic
 
 ## 8. Next Steps
 
-- **Model Deployment:** Integration of the best-performing model into a user-friendly dashboard for real-time predictions.
+- **Model Deployment:** Integration of the best-performing model into a user-friendly dashboard for real-time predictions and pilot target interventions high-risk areas/ water-well types.
 - **Feature Expansion:** Incorporation of additional data sources (e.g., weather, usage patterns) to enhance model accuracy.
 - **Continuous Monitoring:** Regular updates to the model with new data to maintain performance and relevance.
+
+
+## 9. Repository Structure
+
+
+├─ data
+
+├── images
+
+├── .gitignore
+
+├── README.md
+
+├── index.ipynb
+
+├── notebook.pdf
+
+└── presentation.pdf
+
+

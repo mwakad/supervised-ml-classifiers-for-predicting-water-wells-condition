@@ -65,16 +65,16 @@ ROC curves visualize each model's trade-off between sensitivity and specificity 
 ![roc-curves-tuned-gradient-boosting-classifier](https://github.com/user-attachments/assets/cd5b1ca5-2fae-4455-89d3-f04e26591f82)
 
 ### Performance Metrics
-The respective performance of the three classifiers is quantified based on **Accuracy**, **F1-score**, and **ROC-AUC**.
+The respective performance of the three classifiers is quantified based on **F1-score**, and **ROC-AUC**.
 
-| Model                     | Train Accuracy | Test Accuracy | Train F1-score | Test F1-score | Train ROC-AUC | Test ROC-AUC |
+| Model                     | Train F1-score | Test F1-score | Train ROC-AUC | Test ROC-AUC |
 |---------------------------|----------------|---------------|----------------|---------------|---------------|--------------|
-| Logistic Regression (Untuned) | 0.649605       | 0.640120      | 0.650390       | 0.674233      | 0.831460      | 0.816319     |
-| Logistic Regression (Tuned)   | 0.650144       | 0.636700      | 0.650930       | 0.671800      | 0.832009      | 0.816467     |
-| Decision Tree (Untuned)   | 0.999461       | 0.625445      | 0.999461       | 0.657666      | 1.000000      | 0.731613     |
-| Decision Tree (Tuned)     | 0.812680       | 0.634991      | 0.812901       | 0.667340      | 0.953505      | 0.801969     |
-| Gradient Boosting (Untuned) | 0.720366       | 0.668329      | 0.721155       | 0.698047      | 0.879053      | 0.843328     |
-| Gradient Boosting (Tuned)   | 0.817529       | 0.684001      | 0.817773       | 0.710658      | 0.944834      | 0.863916     |
+| Logistic Regression (Untuned) | 0.650390       | 0.674233      | 0.831460      | 0.816319     |
+| Logistic Regression (Tuned)   | 0.650930       | 0.671800      | 0.832009      | 0.816467     |
+| Decision Tree (Untuned)   | 0.999461       | 0.657666      | 1.000000      | 0.731613     |
+| Decision Tree (Tuned)     | 0.812901       | 0.667340      | 0.953505      | 0.801969     |
+| Gradient Boosting (Untuned) | 0.721155       | 0.698047      | 0.879053      | 0.843328     |
+| Gradient Boosting (Tuned)   | 0.817773       | 0.710658      | 0.944834      | 0.863916     |
 
 
 **Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score, ROC-AUC. These metrics justify the classifier's balanced performance across all classes. The superiority of the Ensemble ML model is also justified by the relatively larger number of True Positives, and True Negatives as captured in its confusion matrices (train and test) compared to the other classifiers.

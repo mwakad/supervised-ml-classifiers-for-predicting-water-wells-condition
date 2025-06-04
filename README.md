@@ -10,20 +10,20 @@ Access to clean and reliable water is a critical challenge in Tanzania. Many wel
 
 ## 3. Data Preprocessing
 
-The Data Preprocessing Pipeline encompases the followig steps that are executed sequentially to prevent data-leakage:
+The Data Preprocessing Pipeline encompases the following steps that are executed sequentially to prevent data-leakage:
 
 1. Define Exog and Endog.
 2. Perform Train-Test split.
-3. Drop rendundant and irrelevant columns.
-4. Hande missing values.
-5. Feature engineering.
-6. Multicollinearity check on numerical features.
-7. Numerical Features' normalization.
-8. Categorical Features' OneHot Encoding.
-9. Target Variable Label Encoding.
-10. Addressing Class Imbalance in X_train
-11. Preprocessing Test Data.
-12. Preprocessing Validation Data
+3. Drop rendundant and irrelevant columns in **X_train**.
+4. Handle missing values in **X_train**.
+5. Feature engineering on **X_train**.
+6. Multicollinearity check on numerical features in **X_train**.
+7. Numerical Features' Normalization in **X_train**.
+8. Categorical Features' OneHot Encoding in **X_train**.
+9. Target Variable Label Encoding in **y_train**.
+10. Address Class Imbalance in **y_train**
+11. Preprocess Test set (**X_test** and **y_test**): Steps 3 to 9.
+12. Preprocess Evaluation Data (**testdata.csv**) Steps 3 to 8.
 
 
 ## 4. Modelling

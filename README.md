@@ -30,10 +30,9 @@ The Data Preprocessing Pipeline encompases the following steps that are executed
 
 Multiple supervised ML classifiers are build, trained on a balanced training set, tuned, and their respective performance analyzed to determine the best-fit model for predicting values of a ternary target variable.
 
-- **Decision Tree Classifier (baseline):** Captures non-linear relationships and feature interactions. The model is optimized through grid search, adjusting parameters such as tree depth and minimum samples per split.
-- **Gradient Boosting Classifier:** The _Ensemble Boosting model_ combines multiple weak learners sequentially to improve performance. Hyperparameter tuning is performed using GridSearchCV to optimize the number of estimators, learning rate, and tree depth.
-- **Random Forest Classifier:** The _Ensemble Bagging model_ builds indepedent/ parralel multiple decision trees to improve performance. Hyperparameter tuning is implemented via GridSearchCV to optimize predictive accuracy and control overfitting. 
-
+- **Decision Tree Classifier (baseline):** The baseline non-parametric model captures non-linear relationships and feature interactions. Hyperparameter tuning is implemented using **GridSearchCV** to optimize `max_depth`, `min_samples_split`, and `min_samples_leaf`.
+- **Gradient Boosting Classifier:** The _Ensemble Boosting model_ combines multiple weak learners sequentially to improve performance. Hyperparameter tuning is performed using **GridSearchCV** to optimize `n_estimators`, `learning_rate`, `max_depth`, `subsample`, and `max_features`.
+- **Random Forest Classifier:** The _Ensemble Bagging model_ builds indepedent/ parralel multiple decision trees to improve performance. Hyperparameter tuning is implemented via **GridSearchCV** to optimize `n_estimators`, `max_depth`, `min_samples_split`, and `max_features`.
 
 ## 5. Model Evaluation
 

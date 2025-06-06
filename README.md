@@ -6,7 +6,7 @@ This project explores the use of supervised machine learning classifiers to pred
 
 ## 2. Business Understanding
 
-Access to clean and reliable water is a critical challenge in Tanzania. Many wells fall into disrepair or become non-functional, impacting communities' health and livelihoods. Predicting the condition of water wells enables stakeholders to prioritize maintenance, allocate resources efficiently, and ensure long-term water access. This project addresses the question: **_Can the operational status of water wells be accurately predicted using available data and machine learning?_**
+Access to clean and reliable water is a critical challenge in Tanzania. Many wells fall into disrepair or become non-functional, impacting communities' health and livelihoods. Predicting the condition of water wells enables stakeholders to prioritize maintenance, allocate resources efficiently, and ensure long-term water access. This project addresses the question: **_Can the operational status of water wells be accurately predicted using available data to train tuned supervised ML classification models?_**
 
 ## 3. Data Preprocessing
 

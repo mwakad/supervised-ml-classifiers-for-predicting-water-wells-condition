@@ -46,8 +46,9 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 
 ### ROC Curves
 
-
 **Gradient Boosting Classifier:**
+
+
 
 
 **Random Forest Classifier:**
@@ -56,11 +57,11 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 ### Performance Metrics
 The predictive performance of the three classifiers on the test-set based on **_F1-score_**, and **_ROC-AUC_**.
 
-| Model | Test F1-score | Test ROC-AUC |
-|---------|---------------|--------------|
-| Decision Tree Classifier | 0.756 | 0.756 |
-| Gradient Boosting Classifier | 0. | 0. |
-| Random Forest Classifier | 0. | 0. |
+| Model | F1-score (Train-set) | F1-score (Test-set) | Test ROC-AUC (Train-set) | Test ROC-AUC (Test-set) |
+|---------|---------------|--------------|--------------|--------------|
+| Decision Tree Classifier (tuned) | 0.998 | 0.756 | 1.0 | 0.756 |
+| Gradient Boosting Classifier (tuned) | 0.876 | 0.777 | 0.971 | 0.889 |
+| Random Forest Classifier (tuned) | 0. | 0. | 0. | 0. |
 
 The prediction accuracy percentage of the three classifiers on the **_testdata.csv_** dataset.
 
@@ -70,7 +71,7 @@ The prediction accuracy percentage of the three classifiers on the **_testdata.c
 | Gradient Boosting Classifier |  |
 | Random Forest Classifier |  |
 
-**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score, ROC-AUC. These metrics justify the classifier's balanced performance across all classes. The model's superirority is also justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
+**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score (**_77.7%_**), ROC-AUC (**_88.9%_**). These metrics justify the classifier's balanced performance across all classes. The model's superirority is also justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
 
 
 ### Top 10 Important Features

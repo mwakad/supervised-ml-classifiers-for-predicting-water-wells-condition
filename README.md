@@ -39,7 +39,7 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 ### Confusion Matrices
 
 **Gradient Boosting Classifier:**
-
+![confusion-matrices-gradient-boosting-classifier](https://github.com/user-attachments/assets/621c1a9f-d517-4910-b27e-f793b6a87210)
 
 **Random Forest Classifier:**
 
@@ -48,8 +48,7 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 
 **Gradient Boosting Classifier:**
 
-
-
+![roc-curves-gradient-boosting-classifier](https://github.com/user-attachments/assets/66497f92-1dba-4f92-a25c-cbca5ef3c895)
 
 **Random Forest Classifier:**
 
@@ -71,7 +70,7 @@ The prediction accuracy percentage of the three classifiers on the **_testdata.c
 | Gradient Boosting Classifier |  |
 | Random Forest Classifier |  |
 
-**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score (**_77.7%_**), ROC-AUC (**_88.9%_**). These metrics justify the classifier's balanced performance across all classes. The model's superirority is also justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
+**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score (**_77.7%_**), ROC-AUC (**_88.9%_**). These metrics justify the classifier's balanced performance across all classes. The gap between the model's performance metric on train-set Vs. on test-set is also the least for the classifier. The **_Gradient Boosting Classifier's_** superirority and generalizability to this ternary classification problem is justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
 
 
 ### Top 10 Important Features
@@ -87,14 +86,14 @@ The analysis demonstrates that tuned supervised ML models can effectively predic
 ## 7. Business Recommendations
 
 - **Prioritize Maintenance:** Model predictions can be used to identify wells at risk and allocate maintenance resources efficiently.
-- **Data Collection:** Continued improvement of data quality, especially for key features influencing well condition, is recommended.
-- **Stakeholder Engagement:** Insights should be shared with local authorities and NGOs to inform decision-making and maximize impact.
+- **Data Collection:** Continously improve the training dataset's quality by collecting more data on the key important features, and ensuring variable's labels/ values are recorded accurately.
+- **Stakeholder Engagement:** Insights deduced from this project should be shared with local authorities, other NGOs involved in public service and the Tanzanian Government representatives to support data-driven decision-making.
 
 ## 8. Next Steps
 
-- **Model Deployment:** Integration of the best-performing model into a user-friendly dashboard for real-time predictions and pilot target interventions high-risk areas/ water-well types.
-- **Feature Expansion:** Incorporation of additional data sources (e.g., weather, usage patterns) to enhance model accuracy.
-- **Continuous Monitoring:** Regular updates to the model with new data to maintain performance and relevance.
+- **Model Deployment:** Integration of the hyperparameter-tuned **_Gradient Boosting Classifier_** into a user-friendly dashboard for real-time predictions and leveraging the model's predicitions to pilot target interventions.
+- **Feature Expansion:** Incorporate additional features such as weather data and a water-well's usage patterns) to enhance model accuracy.
+- **Continuous Monitoring:** Formulate and implement frameworks for updating the model's training dataset with recent/ latest data to improve the classifier's performance.
 
 
 ## 9. Repository Structure

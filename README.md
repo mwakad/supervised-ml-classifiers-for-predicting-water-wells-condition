@@ -55,19 +55,26 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 
 
 ### Performance Metrics
-The respective performance of the three classifiers is quantified based on **F1-score**, and **ROC-AUC**.
+The predictive performance of the three classifiers on the test-set based on **_F1-score_**, and **_ROC-AUC_**.
 
-| Model                     | Test Accuracy | Test F1-score | Test ROC-AUC |
-|---------------------------|---------------|---------------|--------------|
-| Decision Tree Classifier | 0.752 | 0.756 | 0.756 |
-| Gradient Boosting Classifier | 0. | 0. | 0. |
-| Random Forest Classifier | 0. | 0. | 0. |
+| Model | Test F1-score | Test ROC-AUC |
+|---------|---------------|--------------|
+| Decision Tree Classifier | 0.756 | 0.756 |
+| Gradient Boosting Classifier | 0. | 0. |
+| Random Forest Classifier | 0. | 0. |
+
+The prediction accuracy percentage of the three classifiers on the **_testdata.csv_** dataset.
+
+| Model | Prediction Accuracy Percentage |
+|---------|-----------------------|
+| Decision Tree Classifier |  |
+| Gradient Boosting Classifier |  |
+| Random Forest Classifier |  |
+
+**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score, ROC-AUC. These metrics justify the classifier's balanced performance across all classes. The model's superirority is also justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
 
 
-**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score, ROC-AUC. These metrics justify the classifier's balanced performance across all classes. The superiority of the Ensemble ML model is also justified by the relatively larger number of True Positives, and True Negatives as captured in its confusion matrices (train and test) compared to the other classifiers.
-
-
-### Top 15 Important Features
+### Top 10 Important Features
 
 
 

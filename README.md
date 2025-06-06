@@ -68,6 +68,7 @@ The prediction accuracy percentage of the three classifiers on the **_testdata.c
 
 | Model | Prediction Accuracy Percentage |
 |---------|-----------------------|
+| Decision Tree Classifier | 67.54% |
 | Gradient Boosting Classifier | 71.06% |
 | Random Forest Classifier | 70.77% |
 

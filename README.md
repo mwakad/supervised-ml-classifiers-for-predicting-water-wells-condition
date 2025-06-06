@@ -72,7 +72,7 @@ The prediction accuracy percentage of the three classifiers on the **_testdata.c
 | Gradient Boosting Classifier | 71.06% |
 | Random Forest Classifier | 70.77% |
 
-**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score (**_77.7%_**), ROC-AUC (**_88.9%_**). These metrics justify the classifier's balanced performance across all classes. The gap between the model's performance metric on train-set Vs. on test-set is also the least for the classifier. The **_Gradient Boosting Classifier's_** superirority and generalizability to this ternary classification problem is justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
+**Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score (**_77.7%_**), ROC-AUC (**_88.9%_**). These metrics justify the classifier's balanced performance across all classes. The gap between the model's performance metric on train-set Vs. on test-set is also the least for the classifier. The **_Gradient Boosting Classifier's_** superirority and generalizability to this ternary classification problem is justified by its comparatively higher prediction accuracy (**71.06%**) on the **_testdata.csv_** dataset. 
 
 
 ### Top 10 Important Features

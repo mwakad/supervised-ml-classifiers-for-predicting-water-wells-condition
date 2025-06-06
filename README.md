@@ -42,6 +42,7 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 ![confusion-matrices-gradient-boosting-classifier](https://github.com/user-attachments/assets/621c1a9f-d517-4910-b27e-f793b6a87210)
 
 **Random Forest Classifier:**
+![confusion-matrices-random-forest-classifier](https://github.com/user-attachments/assets/6a633814-8d70-4ff4-8dbe-1a5944b36732)
 
 
 ### ROC Curves
@@ -51,6 +52,7 @@ Multiple supervised ML classifiers are build, trained on a balanced training set
 ![roc-curves-gradient-boosting-classifier](https://github.com/user-attachments/assets/66497f92-1dba-4f92-a25c-cbca5ef3c895)
 
 **Random Forest Classifier:**
+![roc-curves-random-forest-classifier](https://github.com/user-attachments/assets/024d9ea8-8291-4d4a-87a0-81178420b471)
 
 
 ### Performance Metrics
@@ -60,23 +62,21 @@ The predictive performance of the three classifiers on the test-set based on **_
 |---------|---------------|--------------|--------------|--------------|
 | Decision Tree Classifier (tuned) | 0.998 | 0.756 | 1.0 | 0.756 |
 | Gradient Boosting Classifier (tuned) | 0.876 | 0.777 | 0.971 | 0.889 |
-| Random Forest Classifier (tuned) | 0. | 0. | 0. | 0. |
+| Random Forest Classifier (tuned) | 0.972 | 0.791 | 0.999 | 0.900 |
 
 The prediction accuracy percentage of the three classifiers on the **_testdata.csv_** dataset.
 
 | Model | Prediction Accuracy Percentage |
 |---------|-----------------------|
-| Decision Tree Classifier |  |
-| Gradient Boosting Classifier |  |
-| Random Forest Classifier |  |
+| Gradient Boosting Classifier | 71.06% |
+| Random Forest Classifier | 70.77% |
 
 **Selected Model for Deployment:** -The Hyperparameter-tuned Gradient Boosting Classifier consistently outperformed other models, achieving the highest F1-score (**_77.7%_**), ROC-AUC (**_88.9%_**). These metrics justify the classifier's balanced performance across all classes. The gap between the model's performance metric on train-set Vs. on test-set is also the least for the classifier. The **_Gradient Boosting Classifier's_** superirority and generalizability to this ternary classification problem is justified by its comparatively higher prediction accuracy (70%) on the **_testdata.csv_** dataset. 
 
 
 ### Top 10 Important Features
 
-
-
+![important-features](https://github.com/user-attachments/assets/6c4c9000-b26e-4754-abe8-39b1512dc18f)
 
 
 ## 6. Conclusion
